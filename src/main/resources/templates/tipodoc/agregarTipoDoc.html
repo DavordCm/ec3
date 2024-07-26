@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="~{layout::head}">
+    <meta charset="UTF-8">
+    <title>Agregar Infraccion</title>
+</head>
+<body>
+<nav th:replace="~{layout::menu}"></nav>
+<form action="#" th:action="@{/tipodoc/guardarArea}" th:object="${tipos}" method="post">
+    <label>Descripcion: <input type="text" th:field="*{Descripcion}" /></label><br/>
+    <label>NumLimite: <input type="text" th:field="*{Num_Identifica}" /></label><br/>
+    <input type="submit" value="Guardar" />
+</form>
+
+</body>
+</html>
